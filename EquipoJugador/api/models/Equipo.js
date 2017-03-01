@@ -8,6 +8,22 @@
 module.exports = {
 
   attributes: {
+    nombre:{
+      type:'string',
+      required:true
+    },
+    fechaCreacion:{
+     type:date,
+      required:true
+    },
+    paisResidencia:{
+      type:string,
+      required:true
+    },
+    jugadores:{
+      collection:'Jugador',
+      via:'idJugador'
+    }
 
   }
 };

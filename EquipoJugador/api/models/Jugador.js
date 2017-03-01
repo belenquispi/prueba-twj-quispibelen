@@ -8,7 +8,22 @@
 module.exports = {
 
   attributes: {
-
+  nombre:{
+    type:'string',
+    required:true
+  },
+  fichadoHasta:{
+    type:'date',
+    required:true
+  },
+    posicion:{
+    type:'string',
+      required:true
+    },
+    idJugador:{
+    model:'Jugador',
+      required:true
+    }
   }
 };
 
