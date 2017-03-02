@@ -33,8 +33,12 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    view: 'vistas/home'
+  },
+  'get /error': 'RutasController.error',
+  'post /crearEquipo': 'EquipoController.crearEquipo',
+  'get /listarEquipos': 'EquipoController.listarEquipos',
+  'get /actualizarEquipo' : 'EquipoController.actualizarEquipo'
 
   /***************************************************************************
   *                                                                          *

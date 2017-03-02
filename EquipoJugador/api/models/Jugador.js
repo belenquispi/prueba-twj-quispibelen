@@ -21,7 +21,7 @@ module.exports = {
       required:true
     },
     idJugador:{
-    model:'Jugador',
+    model:'Equipo',
       required:true
     }
   }

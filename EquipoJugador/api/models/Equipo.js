@@ -13,11 +13,11 @@ module.exports = {
       required:true
     },
     fechaCreacion:{
-     type:date,
+     type:'date',
       required:true
     },
     paisResidencia:{
-      type:string,
+      type:'string',
       required:true
     },
     jugadores:{
