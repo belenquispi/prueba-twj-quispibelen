@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="27bd029c-5786-4226-8984-79d63662abd7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/api/controllers/EquipoController.js" afterPath="$PROJECT_DIR$/EquipoJugador/api/controllers/EquipoController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js" afterPath="$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/api/controllers/RutasController.js" afterPath="$PROJECT_DIR$/EquipoJugador/api/controllers/RutasController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/api/models/Equipo.js" afterPath="$PROJECT_DIR$/EquipoJugador/api/models/Equipo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/api/models/Jugador.js" afterPath="$PROJECT_DIR$/EquipoJugador/api/models/Jugador.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/config/routes.js" afterPath="$PROJECT_DIR$/EquipoJugador/config/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/layout.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/layout.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/actualizarEquipo.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/actualizarEquipo.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/crearEquipo.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/crearEquipo.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/listarEquipos.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/listarEquipos.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/actualizarJugador.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/actualizarJugador.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/crearJugador.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/crearJugador.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/listarJugadores.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/listarJugadores.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/home.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/home.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -116,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EquipoJugador/views/layout.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
@@ -126,7 +113,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="JugadorController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="105" column="11" lean-forward="true" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sail</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,7 +141,6 @@
         <option value="$PROJECT_DIR$/EquipoJugador/views/vistas/error.ejs" />
         <option value="$PROJECT_DIR$/EquipoJugador/api/controllers/RutasController.js" />
         <option value="$PROJECT_DIR$/EquipoJugador/config/routes.js" />
-        <option value="$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js" />
         <option value="$PROJECT_DIR$/EquipoJugador/api/controllers/EquipoController.js" />
         <option value="$PROJECT_DIR$/EquipoJugador/api/models/Jugador.js" />
         <option value="$PROJECT_DIR$/EquipoJugador/api/models/Equipo.js" />
@@ -151,6 +152,7 @@
         <option value="$PROJECT_DIR$/EquipoJugador/views/vistas/Equipo/listarEquipos.ejs" />
         <option value="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/listarJugadores.ejs" />
         <option value="$PROJECT_DIR$/EquipoJugador/views/layout.ejs" />
+        <option value="$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js" />
       </list>
     </option>
   </component>
@@ -314,11 +316,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vistas" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,41 +334,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vistas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jugador" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prueba-twj-quispibelen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prueba-twj-quispibelen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EquipoJugador" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vistas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Equipo" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,12 +436,12 @@
       <workItem from="1488401340166" duration="19352000" />
       <workItem from="1488460277196" duration="238000" />
       <workItem from="1488482730730" duration="5370000" />
-      <workItem from="1488488139792" duration="13134000" />
+      <workItem from="1488488139792" duration="13437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40878000" />
+    <option name="totallyTimeSpent" value="41181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,7 +453,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2239354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -799,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2356">
-          <caret line="192" column="18" lean-forward="true" selection-start-line="192" selection-start-column="18" selection-end-line="192" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EquipoJugador/api/controllers/EquipoController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -916,6 +876,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EquipoJugador/api/controllers/JugadorController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="105" column="11" lean-forward="true" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
           <folding />
         </state>
       </provider>

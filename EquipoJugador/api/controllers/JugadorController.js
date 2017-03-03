@@ -8,7 +8,6 @@
 module.exports = {
   listarJugadores: function (req, res) {
     var parametros = req.allParams();
-    sails.log.info(parametros.idEquipo);
     Jugador.find({
       where: {idEquipo: parametros.idEquipo}
     })
@@ -37,7 +36,6 @@ module.exports = {
       posicion: parametros.posicion,
       idEquipo: parametros.idEquipo
     };
-    sails.log.info(parametros);
     Jugador.create(jugadorNuevo)
       .exec(function (errorEncontrado, jugadorCreado) {
         if (errorEncontrado) {
@@ -74,7 +72,6 @@ module.exports = {
   },
   borrarJugador: function (req, res) {
     var parametros = req.allParams();
-    sails.log.info("parame" + parametros);
     if (parametros.id) {
       Jugador.destroy({
         id: parametros.id
@@ -102,8 +99,6 @@ module.exports = {
               }
             });
           }
-          sails.log.info("Lossss" + jugadoresEncontrados);
-          sails.log.info("ID" + parametros.idEquipo);
           res.view('vistas/Jugador/listarJugadores', {
             jugadores: jugadoresEncontrados,
             idEquipo: parametros.idEquipo
