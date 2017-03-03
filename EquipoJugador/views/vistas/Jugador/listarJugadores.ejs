@@ -23,7 +23,7 @@
       Nombre:<%= jugadores[i].nombre %>
       <br>
       <% var fecha = new Date(jugadores[i].fichadoHasta); %>
-      Fecha de finalización de fichado: <%= fecha.toISOString().substr(0, 10) %>
+      Fichado hasta: <%= fecha.toISOString().substr(0, 10) %>
       <br>
       Posición: <%= jugadores[i].posicion %>
     </p>
