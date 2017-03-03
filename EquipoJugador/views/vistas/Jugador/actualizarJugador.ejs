@@ -1,0 +1,19 @@
+<h1 class="text-info text-center">Actualización de la información del Jugador</h1>
+<form action="/Jugador/actualizacionJugador" method="POST">
+  <div class="form-group">
+    <label>Nombre del Jugador</label>
+    <input type="text" class="form-control" placeholder="Ingrese el nombre del Jugador" name="nombreJugador" required value="<%=jugador.nombre%>">
+  </div>
+  <div class="form-group">
+    <label>Fecha de finalización de fichado</label>
+    <% var fecha1 = new Date(jugador.fichadoHasta); %>
+    <input type="date" class="form-control" required name="fichadoHasta" value="<%= fecha1.toISOString().substr(0,10)%>">
+  </div>
+  <div class="form-group">
+    <label>Posición</label>
+    <input type="text" class="form-control" placeholder="Ingrese la posición del jugador" required name="posicion" value="<%=jugador.posicion%>">
+  </div>
+  <input type="hidden" name="idJugador" value="<%=jugador.id%>">
+  <input type="hidden" name="idEquipo" value="<%=idEquipo%>">
+  <button type="submit" class="btn btn-success btn-block">Actualizar Jugador</button>
+</form>

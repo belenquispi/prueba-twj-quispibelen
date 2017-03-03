@@ -38,17 +38,25 @@
 </head>
 
 <body>
+<nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header navbar-inverse">
+    <button type="button" class="navbar-toggle btn-lg" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+    </button>
+    <a class="navbar-brand" href="/">Inicio</a>
+  </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse navbar-inverse">
+    <ul class="nav navbar-nav">
+      <li><a href="/listarEquipos">Equipos</a></li>
+      <li><a href="/CrearEquipo">Crear Equipo</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
-  <h1 class="text-center">Equipos - Jugadores</h1>
-  <lu>
-    <li>
-      <a href="/listarEquipos">Equipos</a>
-    </li>
-  </lu>
-  <br>
-
   <%- body %>
-
 </div>
 
 

@@ -10,7 +10,8 @@ module.exports = {
   attributes: {
   nombre:{
     type:'string',
-    required:true
+    required:true,
+    unique: true
   },
   fichadoHasta:{
     type:'date',
@@ -20,7 +21,7 @@ module.exports = {
     type:'string',
       required:true
     },
-    idJugador:{
+    idEquipo:{
     model:'Equipo',
       required:true
     }

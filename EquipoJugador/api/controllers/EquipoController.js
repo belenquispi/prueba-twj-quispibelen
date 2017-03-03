@@ -20,7 +20,7 @@ module.exports = {
           error: {
             descripcion: "Error al crear el Equipo",
             rawError: err,
-            url: "/Equipo/crearEquipo"
+            url: "/CrearEquipo"
           }
         });
       }
@@ -60,7 +60,8 @@ module.exports = {
     if (parametros.id) {
       Equipo.destroy({
         id: parametros.id
-      }).exec(function (errorIndefinido, equipoBorrado) {
+      }).populate("idEquipo")
+        .exec(function (errorIndefinido, equipoBorrado) {
         if (errorIndefinido) {
           return res.view('vistas/error', {
             error: {
@@ -80,10 +81,18 @@ module.exports = {
               }
             });
           }
-          res.view('vistas/Equipo/listarequipos', {
+          res.view('vistas/Equipo/listarEquipos', {
             equipos: equiposEncontrados
           });
         });
+      });
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          desripcion: "Necesitamos el ID para borrar al Equipo",
+          rawError: "No envia ID",
+          url: "/listarEquipos"
+        }
       });
     }
   },
@@ -127,7 +136,7 @@ module.exports = {
       nombre: parametros.nombreEquipo,
       fechaCreacion: parametros.fechaCreacion,
       paisResidencia: parametros.paisResidencia
-    }
+    };
     Equipo.update({
       id: parametros.idEquipo
     }, equipoAActualizar).exec(function (errorInesperado, equipoActualizado) {

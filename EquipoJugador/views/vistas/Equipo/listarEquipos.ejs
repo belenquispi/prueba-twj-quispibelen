@@ -1,20 +1,20 @@
-<h1 class="text-center">Lista de Equipos</h1>
+<h1 class="text-center text-info">Listado de Equipos</h1>
 <div class="row">
   <div class="col-sm-9">
     <h4>Los equipos que se encuentran registrados en el sistema son los siguientes</h4>
   </div>
   <div class="col-sm-3">
-    <a href="vistas/Equipo/crearEquipo" class="btn btn-block btn-success">Crear Equipo</a>
+    <a href="/CrearEquipo" class="btn btn-block btn-lg btn-success">Crear Equipo</a>
   </div>
 </div>
 <br>
 <% for(var i = 0; i < equipos.length; i++) { %>
-<div class="row">
-  <div class="col-sm-4">
+<div class="row  table-bordered">
+  <div class="col-sm-4" style="margin-top:20px">
     <h2><%= equipos[i].nombre %></h2>
   </div>
   <div class="col-sm-1"></div>
-  <div class="col-sm-5">
+  <div class="col-sm-4" style="margin-top:10px">
     <p>
       ID: <%= equipos[i].id %>
       <br>
@@ -27,9 +27,10 @@
     </p>
   </div>
   <div class="col-sm-1"></div>
-  <div class="col-sm-1">
+  <div class="col-sm-2">
     <a href="/Equipo/borrarEquipo?id=<%= equipos[i].id %>" class="btn btn-block btn-danger">X</a>
     <a href="/Equipo/actualizarEquipo?id=<%= equipos[i].id %>" class="btn btn-block btn-info">Editar</a>
+    <a href="/listarJugadores?idEquipo=<%= equipos[i].id %>" class="btn btn-block btn-warning">Ver Jugadores</a>
   </div>
 </div>
 <br>

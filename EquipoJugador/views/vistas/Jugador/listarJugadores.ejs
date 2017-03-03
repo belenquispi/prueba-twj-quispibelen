@@ -1,0 +1,41 @@
+<h1 class="text-center text-info">Listado de Jugadores</h1>
+<div class="row">
+  <div class="col-sm-9">
+    <h4>Los jugadores que se encuentran registrados en el equipo con código
+      <%= idEquipo %>
+      son:</h4>
+  </div>
+  <div class="col-sm-3">
+    <a href="/CrearJugador?idEquipo=<%= idEquipo %>" class="btn btn-lg btn-block btn-success">Crear Jugador</a>
+  </div>
+</div>
+<br>
+<% for(var i = 0; i < jugadores.length; i++) { %>
+<div class="row table-bordered">
+  <div class="col-sm-4 " style="margin-top:20px">
+    <h2><%= jugadores[i].nombre %></h2>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-4" style="margin-top:10px">
+    <p>
+      ID: <%= jugadores[i].id %>
+      <br>
+      Nombre:<%= jugadores[i].nombre %>
+      <br>
+      <% var fecha = new Date(jugadores[i].fichadoHasta); %>
+      Fecha de finalización de fichado: <%= fecha.toISOString().substr(0, 10) %>
+      <br>
+      Posición: <%= jugadores[i].posicion %>
+    </p>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-2" style="margin-top:10px">
+    <a href="/Jugador/borrarJugador?id=<%= jugadores[i].id %>&idEquipo=<%= idEquipo %>"
+       class="btn btn-block btn-danger">X</a>
+    <a href="/Jugador/actualizarJugador?id=<%= jugadores[i].id %>&idEquipo=<%= idEquipo %>"
+       class="btn btn-block btn-info">Editar</a>
+  </div>
+</div>
+<br>
+<% } %>
+

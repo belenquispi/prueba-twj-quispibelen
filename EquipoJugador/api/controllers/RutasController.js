@@ -6,6 +6,9 @@
  */
 
 module.exports = {
+  home: function (req,res) {
+    return res.view('vistas/home');
+  },
   error: function (req, res) {
     return res.view('vistas/error', {
       error: {
@@ -13,6 +16,14 @@ module.exports = {
         rawError: "Ruta equivocada",
         url: "/"
       }
+    });
+  },
+  crearEquipo: function (req, res) {
+    return res.view('vistas/Equipo/crearEquipo');
+  },
+  crearJugador: function (req, res) {
+    return res.view('vistas/Jugador/crearJugador',{
+      idEquipo:req.allParams().idEquipo
     });
   }
 };

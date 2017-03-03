@@ -32,13 +32,15 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'vistas/home'
-  },
+  'get /': 'RutasController.home',
+  'get /home': 'RutasController.home',
   'get /error': 'RutasController.error',
-  'post /crearEquipo': 'EquipoController.crearEquipo',
+  'get /CrearEquipo': 'RutasController.crearEquipo',
+  'get /CrearJugador': 'RutasController.crearJugador',
   'get /listarEquipos': 'EquipoController.listarEquipos',
-  'get /actualizarEquipo' : 'EquipoController.actualizarEquipo'
+  'get /actualizarEquipo' : 'EquipoController.actualizarEquipo',
+  'get /listarJugadores': 'JugadorController.listarJugadores',
+  'get /actualizarJugador' : 'JugadorController.actualizarJugador'
 
   /***************************************************************************
   *                                                                          *

@@ -10,7 +10,8 @@ module.exports = {
   attributes: {
     nombre:{
       type:'string',
-      required:true
+      required:true,
+      unique: true
     },
     fechaCreacion:{
      type:'date',
@@ -22,7 +23,7 @@ module.exports = {
     },
     jugadores:{
       collection:'Jugador',
-      via:'idJugador'
+      via:'idEquipo'
     }
 
   }
