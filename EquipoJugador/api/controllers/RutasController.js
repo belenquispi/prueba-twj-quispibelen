@@ -21,6 +21,39 @@ module.exports = {
   crearEquipo: function (req, res) {
     return res.view('vistas/Equipo/crearEquipo');
   },
+  actualizarEquipo: function (req, res) {
+    var parametros = req.allParams();
+    if (parametros.id) {
+      Equipo.findOne({
+        id: parametros.id
+      }).exec(function (errorInesperado, equipoEncontrado) {
+        if (errorInesperado) {
+          return res.view('vistas/error', {
+            error: {
+              descripcion: "Se ha producido un error inesperado",
+              rawError: errorInesperado,
+              url: "/listarEquipos"
+            }
+          });
+        }
+        if (equipoEncontrado) {
+          return res.view('vistas/Equipo/actualizarEquipo', {
+            equipo: equipoEncontrado
+          });
+        }
+        else {
+          return res.view('vista/error', {
+            error: {
+              descripcion: "El equipo con el id: " + parametros.id + " no existe",
+              rawError: "No existe el Equipo",
+              url: "/listarEquipos"
+            }
+          });
+        }
+      });
+
+    }
+  },
   crearJugador: function (req, res) {
     Equipo.find()
       .exec(function (errorEncontrado, equiposEncontrados) {

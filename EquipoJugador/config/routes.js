@@ -38,7 +38,7 @@ module.exports.routes = {
   'get /CrearEquipo': 'RutasController.crearEquipo',
   'get /CrearJugador': 'RutasController.crearJugador',
   'get /listarEquipos': 'EquipoController.listarEquipos',
-  'get /actualizarEquipo' : 'EquipoController.actualizarEquipo',
+  'get /actualizarEquipo' : 'RutasController.actualizarEquipo',
   'get /listarJugadores': 'JugadorController.listarJugadores',
   'get /ActualizarJugador' : 'RutasController.actualizarJugador'
 
