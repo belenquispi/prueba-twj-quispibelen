@@ -60,7 +60,7 @@ module.exports = {
     if (parametros.id) {
       Equipo.destroy({
         id: parametros.id
-      }).populate("idEquipo")
+      })
         .exec(function (errorIndefinido, equipoBorrado) {
         if (errorIndefinido) {
           return res.view('vistas/error', {

@@ -1,12 +1,10 @@
 <h1 class="text-center text-info">Listado de Jugadores</h1>
 <div class="row">
   <div class="col-sm-9">
-    <h4>Los jugadores que se encuentran registrados en el equipo con código
-      <%= idEquipo %>
-      son:</h4>
+    <h4>Los jugadores que se encuentran registrados son: </h4>
   </div>
   <div class="col-sm-3">
-    <a href="/CrearJugador?idEquipo=<%= idEquipo %>" class="btn btn-lg btn-block btn-success">Crear Jugador</a>
+    <a href="/CrearJugador?idEquipo=<%=idEquipo%>" class="btn btn-lg btn-block btn-success">Crear Jugador</a>
   </div>
 </div>
 <br>
@@ -26,13 +24,19 @@
       Fichado hasta: <%= fecha.toISOString().substr(0, 10) %>
       <br>
       Posición: <%= jugadores[i].posicion %>
+      <br>
+      <%if(jugadores[i].idEquipo){%>
+      Equipo: <%= jugadores[i].idEquipo.nombre%>
+      <%}else{%>
+      Equipo: Sin equipo asignado
+      <%}%>
     </p>
   </div>
   <div class="col-sm-1"></div>
   <div class="col-sm-2" style="margin-top:10px">
     <a href="/Jugador/borrarJugador?id=<%= jugadores[i].id %>&idEquipo=<%= idEquipo %>"
        class="btn btn-block btn-danger">X</a>
-    <a href="/Jugador/actualizarJugador?id=<%= jugadores[i].id %>&idEquipo=<%= idEquipo %>"
+    <a href="/ActualizarJugador?id=<%= jugadores[i].id %>&idEquipo=<%= idEquipo %>"
        class="btn btn-block btn-info">Editar</a>
   </div>
 </div>

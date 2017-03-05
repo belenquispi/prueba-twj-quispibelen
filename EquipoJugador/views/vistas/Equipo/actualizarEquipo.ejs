@@ -1,18 +1,26 @@
 <h1 class="text-info text-center">Actualización de la información del Equipo</h1>
-<form action="/Equipo/actualizacionEquipo" method="POST">
-  <div class="form-group">
-    <label>Nombre del Equipo</label>
-    <input type="text" class="form-control" placeholder="Ingrese el nombre del Equipo" name="nombreEquipo" required value="<%=equipo.nombre%>">
-  </div>
-  <div class="form-group">
-    <label>Fecha de creación</label>
-    <% var fecha = new Date(equipo.fechaCreacion); %>
-    <input type="date" class="form-control" required name="fechaCreacion" value="<%= fecha.toISOString().substr(0, 10) %>">
-  </div>
-  <div class="form-group">
-    <label>País de residencia </label>
-    <input type="text" class="form-control" placeholder="Ingrese el pais de residencia del Equipo" required name="paisResidencia" value="<%=equipo.paisResidencia%>">
-  </div>
-  <input type="hidden" name="idEquipo" value="<%=equipo.id%>">
-  <button type="submit" class="btn btn-success btn-block">Actualizar Equipo</button>
-</form>
+<div class="col-sm-8">
+  <form action="/Equipo/actualizacionEquipo" method="POST">
+    <div class="form-group">
+      <label>Nombre del Equipo</label>
+      <input type="text" class="form-control" placeholder="Ingrese el nombre del Equipo" name="nombreEquipo" required value="<%=equipo.nombre%>">
+    </div>
+    <div class="form-group">
+      <label>Fecha de creación</label>
+      <% var fecha = new Date(equipo.fechaCreacion); %>
+      <input type="date" class="form-control" required name="fechaCreacion" value="<%= fecha.toISOString().substr(0, 10) %>">
+    </div>
+    <div class="form-group">
+      <label>País de residencia </label>
+      <input type="text" class="form-control" placeholder="Ingrese el pais de residencia del Equipo" required name="paisResidencia" value="<%=equipo.paisResidencia%>">
+    </div>
+    <input type="hidden" name="idEquipo" value="<%=equipo.id%>">
+    <button type="submit" class="btn btn-success btn-block">Actualizar Equipo</button>
+  </form>
+</div>
+<div class="col-sm-4 text-center ">
+<h1><%=equipo.nombre%></h1>
+  <h3>Fecha de creación: <%=equipo.fechaCreacion.toISOString().substr(0, 10)%></h3>
+  <h3>País de residencia: <%=equipo.paisResidencia%> </h3>
+</div>
+

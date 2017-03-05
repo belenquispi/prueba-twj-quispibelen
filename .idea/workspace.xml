@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27bd029c-5786-4226-8984-79d63662abd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/actualizarJugador.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/actualizarJugador.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/crearJugador.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/crearJugador.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/listarJugadores.ejs" afterPath="$PROJECT_DIR$/EquipoJugador/views/vistas/Jugador/listarJugadores.ejs" />
-    </list>
+    <list default="true" id="27bd029c-5786-4226-8984-79d63662abd7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -366,7 +362,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tec_Web_Js" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -452,12 +448,12 @@
       <workItem from="1488401340166" duration="19352000" />
       <workItem from="1488460277196" duration="238000" />
       <workItem from="1488482730730" duration="5370000" />
-      <workItem from="1488488139792" duration="14506000" />
+      <workItem from="1488488139792" duration="15139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42250000" />
+    <option name="totallyTimeSpent" value="42883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

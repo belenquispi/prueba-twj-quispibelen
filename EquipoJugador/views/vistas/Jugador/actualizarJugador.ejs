@@ -1,19 +1,44 @@
 <h1 class="text-info text-center">Actualización de la información del Jugador</h1>
-<form action="/Jugador/actualizacionJugador" method="POST">
-  <div class="form-group">
-    <label>Nombre del Jugador</label>
-    <input type="text" class="form-control" placeholder="Ingrese el nombre del Jugador" name="nombreJugador" required value="<%=jugador.nombre%>">
-  </div>
-  <div class="form-group">
-    <label>Fichado hasta</label>
-    <% var fecha1 = new Date(jugador.fichadoHasta); %>
-    <input type="date" class="form-control" required name="fichadoHasta" value="<%= fecha1.toISOString().substr(0,10)%>">
-  </div>
-  <div class="form-group">
-    <label>Posición</label>
-    <input type="text" class="form-control" placeholder="Ingrese la posición del jugador" required name="posicion" value="<%=jugador.posicion%>">
-  </div>
-  <input type="hidden" name="idJugador" value="<%=jugador.id%>">
-  <input type="hidden" name="idEquipo" value="<%=idEquipo%>">
-  <button type="submit" class="btn btn-success btn-block">Actualizar Jugador</button>
-</form>
+<div class="col-sm-8">
+  <form action="/Jugador/actualizacionJugador" method="POST">
+    <div class="form-group">
+      <label>Nombre del Jugador</label>
+      <input type="text" class="form-control" placeholder="Ingrese el nombre del Jugador" name="nombreJugador" required
+             value="<%= jugador.nombre %>">
+    </div>
+    <div class="form-group">
+      <label>Fichado hasta</label>
+      <% var fecha1 = new Date(jugador.fichadoHasta); %>
+      <input type="date" class="form-control" required name="fichadoHasta"
+             value="<%= fecha1.toISOString().substr(0, 10) %>">
+    </div>
+    <div class="form-group">
+      <label>Posición</label>
+      <input type="text" class="form-control" placeholder="Ingrese la posición del jugador" required name="posicion"
+             value="<%= jugador.posicion %>">
+    </div>
+    <label for="">Equipo</label>
+    <select class="form-control" name="idEquipo">
+      <% for(var i = 0; i < equipos.length; i++){ %>
+      <option value='<%= equipos[i].id %>'>
+        <%= equipos[i].nombre %>
+      </option>
+      <% } %>
+    </select>
+    <br>
+    <input type="hidden" name="idJugador" value="<%= jugador.id %>">
+    <button type="submit" class="btn btn-success btn-block">Actualizar Jugador</button>
+  </form>
+</div>
+<div class="col-sm-4 text-center">
+  <br>
+  <h1><%= jugador.nombre %></h1>
+  <h3>Fichado hasta: <%= fecha1.toISOString().substr(0, 10) %> </h3>
+  <h3>Posición: <%= jugador.posicion %></h3>
+  <% if(jugador.idEquipo){ %>
+  <h3>Equipo: <%= jugador.idEquipo.nombre %></h3>
+  <% } else { %>
+  <h3>Sin equipo definido</h3>
+  <% } %>
+</div>
+

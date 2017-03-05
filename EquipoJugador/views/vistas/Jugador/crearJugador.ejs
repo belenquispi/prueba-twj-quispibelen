@@ -12,6 +12,14 @@
     <label>Posición </label>
     <input type="text" class="form-control" placeholder="Ingrese la posición del jugador" required name="posicion">
   </div>
-  <input type="hidden" name="idEquipo" value="<%=idEquipo%>">
+  <label for="">Equipo</label>
+  <select class="form-control" name="idEquipo">
+    <% for(var i = 0; i < equipos.length; i++){ %>
+    <option value='<%= equipos[i].id %>'>
+      <%= equipos[i].nombre %>
+    </option>
+    <% } %>
+  </select>
+  <br>
   <button type="submit" class="btn btn-success btn-block">Crear Jugador</button>
 </form>

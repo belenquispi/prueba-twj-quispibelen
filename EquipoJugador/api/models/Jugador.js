@@ -23,7 +23,8 @@ module.exports = {
     },
     idEquipo:{
     model:'Equipo',
-      required:true
+      required:true,
+      defaultsTo: 'undefined'
     }
   }
 };
